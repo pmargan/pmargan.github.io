@@ -1,0 +1,44 @@
+// style the blog nav bar
+#blog-nav{
+    grid-area: nav;
+    background: url(../docs/wooden-desk.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    justify-content: center;
+}
+// style the blog header
+.blog-header{
+    grid-area: blog-header;
+    text-align: center;
+    font-size: 2rem;    
+}
+// layout main content with grid
+.blog-container{
+    display: grid;
+    grid-template-areas:
+        "nav nav"
+        "blog-header blog-header"
+        ;
+
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto;
+    gap: 5px;
+    text-align-last: center;
+    background: rgba(66, 66, 66, 0.2);
+    align-items: center;
+   
+}
+
+.peter1 .peter2 .peter3 .peter4 .peter5{
+    grid-area: picture;
+    
+    
+}
+
+.blog1 .blog2 .blog3 .blog4 .blog5{
+    grid-area: post;
+  font-size: 2em;
+}
+
+

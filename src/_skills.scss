@@ -1,0 +1,113 @@
+// layout the skills page using grid
+.skills-wrapper{
+    display: grid;
+    grid-template-areas:
+        "skills-h1 skills-h1 skills-h1"
+        "aside-left skills-article aside-right"
+        "aside-left skills-article aside-right"
+        "aside-left skills-article aside-right"
+        "aside-left skills-article aside-right"
+        "aside-left skills-foot aside-right";
+
+    grid-template-columns: 200px 3fr 200px; 
+    grid-template-rows: auto; 
+    gap: 3px;
+    font-size: 1.5rem;
+
+    background: linear-gradient(#ffffff, #6f7070);
+}
+// change font sizing to suit different size screens
+@media (max-width: 901px) {
+    .skills-wrapper {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1300px) {
+    .skills-wrapper {
+        font-size: 2rem;
+    }
+}
+
+
+// change layout for smaller screens
+@media (max-width: 700px) {
+    .skills-wrapper {
+        gap: 2px;
+        font-size: 1rem;
+        grid-template-areas: 
+            "skills-h1 skills-h1"
+            "skills-article skills-article"
+            "skills-article skills-article"
+            "aside-left aside-right"
+            "aside-left aside-right"
+            "aside-left aside-right"
+            "aside-left aside-right"
+            "aside-left aside-right"
+            "skills-foot skills-foot";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+  
+    }
+}
+// style the main content/articles
+.skills-h1{
+    grid-area: skills-h1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.skills-article{
+    grid-area: skills-article;
+    padding: 2rem 1rem;
+    align-self: auto;
+}
+#aside-left{
+    grid-area: aside-left;
+    align-self: auto;
+}
+#aside-right{
+    grid-area: aside-right;
+    align-self: auto;
+}
+#skills-foot{
+    grid-area: skills-foot;
+    text-align: center;
+    // margin: 1rem;
+    align-self: auto;
+
+}
+.article1 .article3{
+    background-color: #ffffff;
+    z-index: 2;
+}
+.article2 .article4{
+    background-color: aqua;
+    z-index: 2;
+}
+.skills-h3{
+    padding: 0.7rem;
+    margin-bottom: 0;
+    border: 1px 1px 0px 1px solid grey;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background: rgb(224, 213, 213);
+}
+.skills-h2{
+    padding: 0.7rem;
+    margin-top: 0;
+    border: 0px 1px 1px 1px solid grey;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background: rgb(224, 213, 213);
+}
+h4.article1 {
+    margin-top: 1.5rem;
+}
+h4.article2 {
+    margin-top: 1.5rem;
+}
+h4.article3 {
+    margin-top: 1.5rem;
+}
+h4.article4 {
+    margin-top: 1.5rem;
+}
