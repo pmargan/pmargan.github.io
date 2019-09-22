@@ -29,7 +29,5 @@ used Imported graphics & fonts.
 
 ### Site Map
 <img src="./docs/profilesiteflow.png" alt="site map">
-not sure how to get it in here.
-have made one though
 
-pictures of site also created but dont know how to put them in markwon file.
+
